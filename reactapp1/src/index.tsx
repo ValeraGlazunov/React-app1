@@ -1,7 +1,7 @@
 import React from 'react';
 import {createRoot} from 'react-dom/client'
-import { App } from './app';
-import { Product } from './product';
+import { App } from './App';
+import { Product } from './Product';
 
 
 // Находим HTML-элемент с id "root"
@@ -12,4 +12,4 @@ const root = createRoot(rootElement);
 
 // Отображение компонента App
 root.render(<App></App>)
-root.render(<Product name={''} price={0} author={''}></Product>)
+root.render(<Product name={''} author={''}></Product>)
