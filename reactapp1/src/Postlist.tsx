@@ -2,6 +2,7 @@ import React from 'react';
 import {createRoot} from 'react-dom/client'
 import { Product } from './Product'
 import { App } from './App';
+import { useState } from "react"
 
 
     const name = "Posts"
@@ -27,4 +28,26 @@ const PostList = ({}) => {
         </div>
 )}
 
+
+const ButtonLike = () => {
+    const [likes, setLikes] = useState(0);
+    const [isLiked, setIsLiked] = useState(false);
+
+    const handleLike = () => {
+        setLikes(likes + 1);
+        setIsLiked(true); 
+    };
+
+    return (
+        <div>
+            <p>Количество лайков: {likes}</p>
+            <button onClick={handleLike} disabled={isLiked}>
+                {isLiked ? 'Лайк уже поставлен' : 'Лайкнуть'}
+                <hr />
+            </button>
+        </div>
+    );
+};
+
+export default ButtonLike;
 
