@@ -1,6 +1,8 @@
 interface IProductProps {
     name: string,
-    author: string,
+    author: string
+    id: number,
+    image: string
 }
 
 export function Product(props: IProductProps){
