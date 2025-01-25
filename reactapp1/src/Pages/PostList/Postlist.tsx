@@ -1,7 +1,7 @@
 import React from 'react';
 import {createRoot} from 'react-dom/client'
-import { Product } from './Product'
-import { App } from './App';
+import { Product } from '../../Product'
+import { App } from '../../App';
 import { useState } from "react"
 import './PostList.css'
 import { title } from 'process';
