@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { IPost } from './usePostById'
+import { IPost } from './UsePost'
 
 // https://fakestoreapi.com/products/id
 export function useProductById(id: number) {
@@ -18,4 +18,4 @@ export function useProductById(id: number) {
     return {product: product}
 }
 
-export { IPost }
+
